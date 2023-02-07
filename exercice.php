@@ -28,11 +28,12 @@ class User
         return $this;
     }
 
-    public function test(){
-        $this->hello()->register()->mail();
-    }
 }
 
-$user1 = new User("Anicet");
 
-$user1->test();
+function test(){
+    $user1 = new User("Anicet");
+    $user1->hello()->register()->mail();
+}
+
+test();
